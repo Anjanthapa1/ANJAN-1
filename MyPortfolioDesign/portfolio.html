@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Tilt+Prism&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+</head>
+<body>
+    
+    <div class="header">
+    <div class="navbar">
+            <div class="portfolio">
+                <a href="portfolio.html"><span class="fname">ANJAN</span> <span class="lname">THAPA</span></a>
+            </div>
+                <div class="ul">
+                <li><a href="portfolio.html">HOME</a></li>
+                <li><a href="#aboutme">ABOUTME</a></li>
+                <li><a href="#">SKILL</a></li>
+                <li><a href="#">PROJECT</a></li>
+                <li><a href="#contactme">CONTACTME</a></li>
+                </div>
+                <div class="open-icon" onclick="openSidebar()"><img src="images/menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></div>
+    </div>
+        <div class="responsive-nav">       
+            <div class="close-icon" onclick="closeSidebar()"><img src="images/close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></div>
+            <div class="responsive-ul">
+                <li><a href="portfolio.html">HOME</a></li>
+                <li><a href="#aboutme">ABOUTME</a></li>
+                <li><a href="#">SKILL</a></li>
+                <li><a href="#">PROJECT</a></li>
+                <li><a href="#contactme">CONTACTME</a></li>
+                </div>
+        </div> 
+    </div>
+
+    <div class="main">
+    <div class="hero-section">
+        <div class="content-img-grid">
+        <div class="description">
+            <div class="description-intro">
+            <p>Hi! I'm a <br> Frontend Developer <br>| Turning ideas into clean UI |</p> <br>
+            <span>My Simple and Classic Portfolio. <br> ... ANJAN THAPA ...</span>
+            </div>
+        <div class="button">
+             <a href="#" >Skill</a>
+             <a href="#">Project</a>
+        </div>
+        </div>
+        <div class="profile-img"><div class="imagediv"><img src="images/2578.webp" class="image"></div>
+       </div></div>
+    </div><hr>
+    <div class="aboutme-section" id="aboutme">
+        <div class="aboutme-div" >
+            <p class="aboutme-heading">| ABOUTME |</p>
+            <div class="myimage-div"><img src="images/103.jpg" class="myimage"></div>
+        <div class="myintro">
+            <p>Hi! Everyone, I'm ANJAN THAPA.</p><br><br> <p>I'm a student studying BSc.CSIT in Prithvi Narayan Campus, Pokhara. I'm is at 3rd semister currently.
+            I'm a passionate beginner Frontend Developer who recently completed HTML and CSS form beginner to advanced level.</p><br><br>
+            <p>Well, I'm very intrested in Computer Science. I enjoyed building clean, responsive, and modern user inferface that looks good on all devices.
+            Currently, I'm improving my web design skills and thinking. I'm preparing to learn JavaScript to build more interactive web applications.</p>
+            <p>My goal is to become a skilled Full Stack Web Developer and create websites that are both effective and user friendly. This is my portfolio which is mine first project.
+            My dedication take me here today and I'm still growing day-by-day in this platform.</p><br> <br>
+            <p>I'm currently expanding my skills like responsive web design, CSS scroll animation, logical thinking, etc. and working toward becoming a professional Full Stack WEB-DEVELOPER.</p>
+        </div></div>
+    </div><hr>
+    <div class="contact-section" id="contactme">
+        <div class="contact-div">
+            <p class="contact-heading">| CONTACT ME |</p>
+            <form action=" ">
+                <fieldset>
+                    <legend>CONTACT HERE:</legend>
+                <label for="name" class="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="| name" required>
+                
+                <label for="" class="email">Email:</label>
+                    <input type="email" name="emailid" id="email" placeholder="| email" required>
+                
+                <label for="" class="message">Message:</label>
+                    <textarea name="message" id="message" placeholder="type your message here..."></textarea>
+                <button class="Send_Message">Send Message</button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    </div><hr>
+
+    <div class="footer">
+        <div class="myname"><P><span class="fname">ANJAN</span> <span class="lname">THAPA</span></P></div>
+         <div class="footer-nav">
+                <li>| <a href="portfolio.html">HOME</a> |</li>
+                <li>| <a href="#aboutme">ABOUTME</a> |</li>
+                <li>| <a href="#">SKILL</a> |</li>
+                <li>| <a href="#">PROJECT</a> |</li>
+                <li>| <a href="#contactme">CONTACTME</a> |</li>
+                </div> <hr>
+                <p class="footer-description">stay connected with me:</p>
+                <nav class="social-icons">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-whatsapp"></a>
+                <a href="#" class="fa fa-telegram"></a></nav>
+                <br><br>
+                <p class="copyright-tag">Copyright &copy; | ANJAN THAPA |</p>
+    </div>
+</body>
+<script>
+    function openSidebar(){
+        const sidebar = document.querySelector('.responsive-nav')
+        sidebar.classList.add('active')
+    }
+    function closeSidebar(){
+        const sidebar = document.querySelector('.responsive-nav')
+        sidebar.classList.remove('active')
+    }
+</script>
+</html>
